@@ -1,0 +1,1805 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Римини и окрестности: путеводитель 18–30 июня</title>
+  <meta name="description" content="Самостоятельный путеводитель по Римини, Равенне, Сан-Марино, Градаре, Урбино и близким местам на 18–30 июня.">
+  <style>
+    :root {
+      --sand: #fff8ec;
+      --paper: #ffffff;
+      --ink: #24313f;
+      --muted: #64748b;
+      --blue: #0f6c81;
+      --blue-dark: #0b4f60;
+      --terracotta: #c95d3f;
+      --terracotta-dark: #9e432b;
+      --olive: #55745b;
+      --line: #e6d8c6;
+      --shadow: 0 18px 45px rgba(36, 49, 63, 0.12);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(201, 93, 63, 0.16), transparent 32rem),
+        linear-gradient(180deg, #fdf2df 0%, var(--sand) 35%, #f7efe2 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    a:hover {
+      color: var(--terracotta-dark);
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      background: #e9dcc9;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 72vh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: white;
+      background: linear-gradient(135deg, rgba(11, 79, 96, 0.86), rgba(36, 49, 63, 0.44));
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 180px;
+      background: linear-gradient(180deg, transparent, rgba(253, 242, 223, 0.95));
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 92px 0 112px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin: 0 0 18px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      font-weight: 750;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.12;
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: clamp(42px, 7vw, 86px);
+      letter-spacing: -0.055em;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: clamp(18px, 2.3vw, 24px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: white;
+      background: rgba(255, 255, 255, 0.14);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--terracotta);
+      background: var(--terracotta);
+      box-shadow: 0 12px 28px rgba(158, 67, 43, 0.28);
+    }
+
+    .button:hover {
+      color: white;
+      background: var(--terracotta-dark);
+      text-decoration: none;
+    }
+
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      margin-top: -48px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    nav.toc ul {
+      display: flex;
+      gap: 6px;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+    }
+
+    nav.toc a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    nav.toc a:hover {
+      color: white;
+      background: var(--blue);
+      text-decoration: none;
+    }
+
+    section {
+      margin: 64px 0;
+      scroll-margin-top: 88px;
+    }
+
+    .section-title {
+      display: grid;
+      gap: 12px;
+      max-width: 840px;
+      margin-bottom: 24px;
+    }
+
+    .section-title h2 {
+      color: var(--blue-dark);
+      font-size: clamp(30px, 4vw, 48px);
+      letter-spacing: -0.035em;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid rgba(230, 216, 198, 0.95);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .card.pad {
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--blue-dark);
+      font-size: 22px;
+    }
+
+    .card p,
+    .card li {
+      color: #415166;
+    }
+
+    .card p:last-child,
+    .card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      background: #e9dcc9;
+    }
+
+    .photo-card .body {
+      padding: 18px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      background: #e6f3f5;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .pill.price {
+      color: var(--terracotta-dark);
+      background: #fde8df;
+    }
+
+    .pill.green {
+      color: #2f5d3b;
+      background: #e5f1e8;
+    }
+
+    .quick {
+      margin-top: 34px;
+    }
+
+    .quick .card {
+      border-top: 6px solid var(--terracotta);
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 22px;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      border-radius: 99px;
+      background: linear-gradient(var(--terracotta), var(--blue));
+    }
+
+    .step {
+      position: relative;
+      padding: 18px 18px 18px 64px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 10px 28px rgba(36, 49, 63, 0.08);
+    }
+
+    .step::before {
+      content: attr(data-time);
+      position: absolute;
+      left: 0;
+      top: 18px;
+      width: 46px;
+      min-height: 46px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--sand);
+      border-radius: 50%;
+      color: white;
+      background: var(--blue);
+      font-size: 11px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .step h3 {
+      color: var(--terracotta-dark);
+      font-size: 20px;
+    }
+
+    .step p {
+      margin: 8px 0 0;
+    }
+
+    .step ul {
+      margin: 10px 0 0;
+      padding-left: 1.25rem;
+      color: #415166;
+    }
+
+    .step ul li + li {
+      margin-top: 6px;
+    }
+
+    .step-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .step-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 11px;
+      border-radius: 10px;
+      background: #e6f3f5;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .step-links a:hover {
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+    }
+
+    .maps-pin {
+      display: inline-flex;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .note {
+      border-left: 5px solid var(--terracotta);
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: #fff2e9;
+      color: #5d382e;
+    }
+
+    .warning {
+      border-left-color: #a63b2b;
+      background: #fff0ee;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: white;
+      background: var(--blue-dark);
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #fbf5eb;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 22px;
+      align-items: start;
+      margin: 24px 0;
+    }
+
+    .map-link {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 9px 12px;
+      border-radius: 12px;
+      color: white;
+      background: var(--blue);
+      font-weight: 850;
+    }
+
+    .map-link:hover {
+      color: white;
+      background: var(--blue-dark);
+      text-decoration: none;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: var(--olive);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    footer {
+      margin-top: 72px;
+      padding: 36px 0;
+      color: #6b5e4f;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 920px) {
+      .grid.two, .grid.three, .grid.four, .day {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 620px;
+      }
+
+      nav.toc {
+        border-radius: 18px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page, .hero-inner {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .hero-inner {
+        padding-bottom: 88px;
+      }
+
+      section {
+        margin: 44px 0;
+      }
+
+      .card.pad, .photo-card .body {
+        padding: 16px;
+      }
+
+      th, td {
+        padding: 11px 10px;
+        font-size: 14px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+
+      .hero {
+        min-height: auto;
+        color: black;
+        background: white;
+      }
+
+      .hero::after,
+      nav.toc,
+      .hero-actions,
+      .photo-card img {
+        display: none;
+      }
+
+      .hero-inner,
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      section {
+        margin: 24px 0;
+        break-inside: avoid;
+      }
+
+      .card, table, .step {
+        box-shadow: none;
+      }
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+
+      .map-link {
+        color: black;
+        background: transparent;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <img class="hero-photo" src="images/hero-tiberio.jpg" alt="Мост Тиберия в Римини">
+    <div class="hero-inner">
+      <p class="eyebrow">18–30 июня · база в Римини · самостоятельные маршруты</p>
+      <h1>Римини и окрестности: must-see без дорогих экскурсий</h1>
+      <p class="subtitle">Готовый план на отдых у Адриатики: Римини, Равенна, Сан-Марино, Градара, Урбино, Сантарканджело и Сан-Лео. Аренда авто: 24–26 июня, возврат 27-го. С логистикой, ценами, парковками, ссылками и подсказками.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#quick">Смотреть быстрый план</a>
+        <a class="button" href="https://www.google.com/maps/dir/Rimini/Ravenna/San+Marino/Gradara/Urbino/Rimini" target="_blank" rel="noopener">Открыть карту маршрутов</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="toc" aria-label="Оглавление">
+      <ul>
+        <li><a href="#quick">Быстрый план</a></li>
+        <li><a href="#prep">Подготовка</a></li>
+        <li><a href="#car-rental">Аренда авто</a></li>
+        <li><a href="#rimini">Римини</a></li>
+        <li><a href="#santarcangelo">Сантарканджело</a></li>
+        <li><a href="#ravenna">24 июня</a></li>
+        <li><a href="#san-marino-gradara">25 июня</a></li>
+        <li><a href="#urbino">26 июня</a></li>
+        <li><a href="#optional-ferrara">Феррара</a></li>
+        <li><a href="#optional-bologna">Болонья</a></li>
+        <li><a href="#extras">Бонусы</a></li>
+        <li><a href="#food">Еда</a></li>
+        <li><a href="#budget">Бюджет</a></li>
+        <li><a href="#tips">Шпаргалка</a></li>
+      </ul>
+    </nav>
+
+    <section id="quick" class="quick">
+      <div class="section-title">
+        <h2>Коротко: что точно стоит увидеть</h2>
+        <p>Три главных авто-дня на 24–26 июня: Равенна, Сан-Марино с Градарой и Урбино. До аренды — Римини и Сантарканджело без машины. Если захочется больше — добавьте Феррару и Болонью.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card pad">
+          <h3>1. Равенна</h3>
+          <p><strong>Почему ехать:</strong> лучшие византийские мозаики Италии, UNESCO, компактный центр. Это культурный must-see номер один рядом с Римини.</p>
+          <div class="meta">
+            <span class="pill">~1 час</span>
+            <span class="pill price">€12.50–14.50</span>
+            <span class="pill green">лучше утром</span>
+          </div>
+        </article>
+        <article class="card pad">
+          <h3>2. Сан-Марино + Градара</h3>
+          <p><strong>Почему ехать:</strong> панорамы, башни, отдельная страна за 40 минут и один из самых красивых средневековых замков региона.</p>
+          <div class="meta">
+            <span class="pill">1 полный день</span>
+            <span class="pill price">€10–25</span>
+            <span class="pill green">рано выехать</span>
+          </div>
+        </article>
+        <article class="card pad">
+          <h3>3. Урбино</h3>
+          <p><strong>Почему ехать:</strong> город Ренессанса, Палаццо Дукале, виды на холмы Марке. Дорога длиннее, но день очень насыщенный.</p>
+          <div class="meta">
+            <span class="pill">~1.5 часа</span>
+            <span class="pill price">€12</span>
+            <span class="pill green">полный день</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Оптимальная схема для 18–30 июня с авто 24–26:</strong> до аренды спокойно осмотрите Римини и Сантарканджело без машины. Три авто-дня используйте на Равенну, Сан-Марино + Градара и Урбино. После возврата авто 27-го останутся пляж, Борго и два опциональных выезда.
+      </div>
+      <div class="note">
+        <strong>Как пользоваться маршрутами:</strong> в каждом дне — пошаговый план с адресами, направлениями («куда идти», «куда парковаться») и кнопками <strong>📍 Google Maps</strong> на каждую точку. Внизу каждого дня — ссылка «Открыть весь маршрут дня» для навигации в Google Maps одним кликом.
+      </div>
+
+      <table aria-label="Рекомендуемый календарь">
+        <thead>
+          <tr>
+            <th>Даты</th>
+            <th>Маршрут</th>
+            <th>Логика</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>18–19 июня</td>
+            <td>Римини: центр, мост Тиберия, Борго Сан-Джулиано, пляж</td>
+            <td>Привыкнуть к городу, машина пока не нужна.</td>
+          </tr>
+          <tr>
+            <td>20–21 июня</td>
+            <td>Пляж, вечерние прогулки по Борго</td>
+            <td>Отдых перед активными выездами.</td>
+          </tr>
+          <tr>
+            <td>22 июня</td>
+            <td>Сантарканджело (пещеры + борго)</td>
+            <td>10 км от Римини, можно на такси или автобусе.</td>
+          </tr>
+          <tr>
+            <td>23 июня</td>
+            <td>Пляж, подготовка к аренде</td>
+            <td>Проверить ваучер, слоты в Равенне, зарядить телефон.</td>
+          </tr>
+          <tr>
+            <td><strong>24 июня</strong></td>
+            <td><strong>Авто-день 1: Равенна</strong></td>
+            <td>Мозаики UNESCO, лучше стартовать утром.</td>
+          </tr>
+          <tr>
+            <td><strong>25 июня</strong></td>
+            <td><strong>Авто-день 2: Сан-Марино + Градара</strong></td>
+            <td>Рано выехать, чтобы обойти толпы.</td>
+          </tr>
+          <tr>
+            <td><strong>26 июня</strong></td>
+            <td><strong>Авто-день 3: Урбино</strong></td>
+            <td>Полный день, возврат авто вечером или утром 27-го.</td>
+          </tr>
+          <tr>
+            <td>27 июня</td>
+            <td>Возврат авто, пляж</td>
+            <td>Если не вернули вечером 26-го — сдайте машину до времени из договора.</td>
+          </tr>
+          <tr>
+            <td>28–29 июня</td>
+            <td>Опционально: Феррара и/или Болонья</td>
+            <td>Нужна новая аренда или поезд; маршруты ниже в гайде.</td>
+          </tr>
+          <tr>
+            <td>30 июня</td>
+            <td>Свободный день: море, повтор любимого места</td>
+            <td>Запас на погоду и усталость.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="prep">
+      <div class="section-title">
+        <h2>Подготовка до поездки</h2>
+        <p>Эти действия лучше сделать заранее, особенно для июня: билеты с тайм-слотами, аренда авто и парковочные приложения экономят много времени.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card pad">
+          <h3>Что забронировать</h3>
+          <ul class="checklist">
+            <li><strong>Равенна:</strong> Ravenna Mosaics Pass и слот в Мавзолей Галлы Плацидии на <a href="https://www.ravennamosaici.it/en/ticketoffice/" target="_blank" rel="noopener">ravennamosaici.it</a>.</li>
+            <li><strong>Авто:</strong> аренда с <strong>24 по 26 июня</strong>, возврат <strong>27 июня</strong>. Лучше малолитражка. Сравнить: <a href="https://www.discovercars.com/italy-mainland/rimini/rmi" target="_blank" rel="noopener">DiscoverCars</a>, <a href="https://www.rentalcars.com/" target="_blank" rel="noopener">Rentalcars</a>, <a href="https://www.kayak.com/Cheap-Rimini-Car-Rentals.27638.cars.ksp" target="_blank" rel="noopener">KAYAK</a>.</li>
+            <li><strong>Урбино:</strong> билет в Palazzo Ducale / Galleria Nazionale delle Marche на <a href="https://gndm.it/en/visit/" target="_blank" rel="noopener">gndm.it</a>.</li>
+            <li><strong>Сантарканджело:</strong> пещеры через <a href="https://iatsantarcangelo.com/en/guided-tours/mysterious-santarcangelo-the-hidden-underground-city/" target="_blank" rel="noopener">IAT Santarcangelo</a>.</li>
+          </ul>
+        </article>
+
+        <article class="card pad">
+          <h3>Документы и приложения</h3>
+          <ul class="checklist">
+            <li>Паспорт или ID-карта для Сан-Марино. Границы фактически открытые, но документ лучше иметь.</li>
+            <li>Водительское удостоверение, кредитная карта на имя водителя, ваучер аренды.</li>
+            <li>Google Maps с офлайн-картой Emilia-Romagna / Marche, Waze для камер, EasyPark или MyCicero для парковок.</li>
+            <li>На пещеры Сантарканджело возьмите лёгкую кофту: внутри около 13 °C даже летом.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="note warning">
+        <strong>ZTL — главный риск на машине.</strong> В исторические центры Римини, Урбино, Равенны, Болоньи и многие борги нельзя заезжать без разрешения. Камеры фиксируют въезд автоматически, штраф часто приходит через прокатную компанию с административным сбором. Стратегия простая: вбивайте в навигатор не площадь в центре, а конкретную парковку с буквой P.
+      </div>
+    </section>
+
+    <section id="car-rental">
+      <div class="section-title">
+        <h2>Аренда авто: 24–26 июня, возврат 27-го</h2>
+        <p>Короткий ответ на главный вопрос: если в договоре уже оплачены 3 суток (24 → 27), вечерний возврат 26-го и утренний 27-го обычно стоят одинаково. Разница появляется, если вы пересекаете оплаченное время или бронируете лишний день.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card pad">
+          <h3>Вечером 26-го или утром 27-го?</h3>
+          <ul>
+            <li><strong>Одинаковая цена,</strong> если бронь на 3 суток с 24 по 27 июня и вы возвращаете машину в любой момент внутри этого периода.</li>
+            <li><strong>Дешевле вечером 26-го</strong> только если вы изначально забронировали 4 дня и реально сокращаете аренду до 3. Деньги за «неиспользованные часы» обычно не возвращают, но вы не платите за лишний день.</li>
+            <li><strong>Дороже,</strong> если вернёте позже времени из договора: после grace period 29–59 минут часто начисляют ещё один полный день.</li>
+            <li><strong>Практика:</strong> бронируйте возврат на 27-е утром в то же время, что и получение 24-го. Фактически можно сдать вечером 26-го, если это всё ещё внутри оплаченных 72 часов.</li>
+          </ul>
+        </article>
+
+        <article class="card pad">
+          <h3>Пример расчёта</h3>
+          <p>Допустим, вы забрали машину <strong>24 июня в 10:00</strong> и оплатили аренду до <strong>27 июня в 10:00</strong>.</p>
+          <ul>
+            <li>Возврат <strong>26 июня в 19:00</strong> — укладывается в 3 суток, доплаты нет.</li>
+            <li>Возврат <strong>27 июня в 09:30</strong> — тоже без доплаты.</li>
+            <li>Возврат <strong>27 июня в 11:30</strong> — риск +1 день (перешли 72 часа + grace period).</li>
+          </ul>
+          <p>Итог: выбирайте по удобству. Вечер 26-го удобен, если после Урбино не хотите думать о парковке ночью. Утро 27-го — если нужна машина утром для покупок или поездки к пункту возврата.</p>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Совет при бронировании:</strong> в ваучере проверьте точное время pickup и drop-off, лимит километров, франшизу и нужна ли международная кредитная карта на имя водителя. Фотографируйте машину при получении и при возврате со всех сторон.
+      </div>
+    </section>
+
+    <section id="rimini">
+      <div class="section-title">
+        <h2>День без авто: Римини + Борго Сан-Джулиано</h2>
+        <p>Это стоит сделать в первый или второй день. Машина не нужна: центр компактный, а вечером приятно перейти через мост Тиберия в Борго.</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Маршрут пешком на 3–4 часа</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Старт у Арки Августа на севере centro storico. Идёте на юг по Corso d'Augusto, затем к мосту Тиберия и переходите в Борго. Машина не нужна; если приехали на авто — оставьте её на <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Tiberio+Rimini" target="_blank" rel="noopener">Parcheggio Tiberio</a> (Via Bastioni Settentrionali 6).</p>
+          <div class="timeline">
+            <div class="step" data-time="09:30">
+              <h3>1. Арка Августа — старт</h3>
+              <p><strong>Где:</strong> Corso d'Augusto 168, на северной границе римского центра. Это самая старая сохранившаяся римская арка в северной Италии (27 г. до н.э.).</p>
+              <ul>
+                <li>Подойдите с северной стороны Corso d'Augusto — арка стоит поперёк улицы, её видно издалека.</li>
+                <li>Обойдите вокруг, сфотографируйте с обеих сторон. Внутрь не заходите — это монумент с улицы.</li>
+                <li>Здесь же начинается главная пешеходная ось centro storico.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Arco+d'Augusto+Rimini" target="_blank" rel="noopener">📍 Арка на карте</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:00">
+              <h3>2. Corso d'Augusto → Piazza Tre Martiri</h3>
+              <p><strong>Как идти:</strong> от арки идите на <strong>юг</strong> по Corso d'Augusto — прямая улица с магазинами и кафе, ~7–10 минут пешком (~500 м).</p>
+              <ul>
+                <li>На Piazza Tre Martiri — бывший римский форум, сегодня главная городская площадь с памятником Цезарю.</li>
+                <li>Справа от площади — кафе для кофе; слева уходят улочки к Tempio Malatestiano.</li>
+                <li>Ориентир: если видите Torre dell'Orologio (часовая башня) — вы на месте.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Tre+Martiri+Rimini" target="_blank" rel="noopener">📍 Piazza Tre Martiri</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Arco+d'Augusto,+Rimini&destination=Piazza+Tre+Martiri,+Rimini&travelmode=walking" target="_blank" rel="noopener">🚶 От арки сюда</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:45">
+              <h3>3. Domus del Chirurgo + Tempio Malatestiano</h3>
+              <p><strong>Где:</strong> Piazza Ferrari / Via Tempio Malatestiano — археологический комплекс и знаменитый собор Малатеста рядом.</p>
+              <ul>
+                <li>От Piazza Tre Martiri поверните на <strong>Via Tempio Malatestiano</strong> (2 мин пешком на запад).</li>
+                <li><strong>Domus del Chirurgo</strong> — раскопки дома римского хирурга II века; вход через Museo della Città. Комбо-билет ~€7.</li>
+                <li><strong>Tempio Malatestiano</strong> — снаружи бесплатно, внутрь ~€4 (по желанию). Фасад Альберти — один из символов Римини.</li>
+                <li>Заложьте 45–60 минут на археологию + осмотр собора снаружи.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Domus+del+Chirurgo+Rimini" target="_blank" rel="noopener">📍 Domus del Chirurgo</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Tempio+Malatestiano+Rimini" target="_blank" rel="noopener">📍 Tempio Malatestiano</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Piazza+Tre+Martiri,+Rimini&destination=Domus+del+Chirurgo,+Rimini&travelmode=walking" target="_blank" rel="noopener">🚶 От площади сюда</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:00">
+              <h3>4. Мост Тиберия (Ponte di Tiberio)</h3>
+              <p><strong>Как дойти:</strong> от Tempio Malatestiano спуститесь на юг по Via IV Novembre или Via Tempio Malatestiano к набережной Marecchia, затем ~5 мин до моста.</p>
+              <ul>
+                <li>Мост Тиберия (14–21 гг. н.э.) — единственный римский мост, по которому до сих пор ходит транспорт. Пересекает реку Marecchia.</li>
+                <li>Встаньте на середину моста: слева — centro storico, справа — Borgo San Giuliano.</li>
+                <li>После фото <strong>перейдите мост пешком</strong> на западный берег — вы уже в Борго.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Ponte+di+Tiberio+Rimini" target="_blank" rel="noopener">📍 Мост на карте</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Tempio+Malatestiano,+Rimini&destination=Ponte+di+Tiberio,+Rimini&travelmode=walking" target="_blank" rel="noopener">🚶 От собора к мосту</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:30">
+              <h3>5. Borgo San Giuliano — финал дня</h3>
+              <p><strong>Куда идти после моста:</strong> сразу за мостом — Via Ballerini и Piazza Malatesta. Дальше блуждайте по узким улочкам.</p>
+              <ul>
+                <li><strong>Муралы Феллини:</strong> Via Ariminense, Via Forzieri, Via dell'Arco — на стенах домов сцены из фильмов режиссёра.</li>
+                <li><strong>Обед:</strong> Nud e Crud (Via Forzieri 4) — piadina и cassoni; Osteria de Borg (Via Forzieri 22) — паста, лучше бронь на вечер.</li>
+                <li>Борго — ZTL 24/7, машину сюда не завозите. Обратно в центр — тем же мостом Тиберия.</li>
+                <li>На закате снова выйдите на мост: лучшие фото Борго с восточного берега.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Borgo+San+Giuliano+Rimini" target="_blank" rel="noopener">📍 Борго на карте</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Ponte+di+Tiberio,+Rimini&destination=Borgo+San+Giuliano,+Rimini&travelmode=walking" target="_blank" rel="noopener">🚶 От моста в Борго</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Arco+d'Augusto,+Rimini/Piazza+Tre+Martiri,+Rimini/Domus+del+Chirurgo,+Rimini/Ponte+di+Tiberio,+Rimini/Borgo+San+Giuliano,+Rimini" target="_blank" rel="noopener">Открыть весь пеший маршрут в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/rimini-arco.jpg" alt="Арка Августа в Римини" loading="lazy">
+            <div class="body">
+              <h3>Arco d'Augusto</h3>
+              <p>Старейшая сохранившаяся римская арка в северной Италии. Corso d'Augusto 168 — точка старта всей прогулки.</p>
+              <div class="meta"><span class="pill price">бесплатно</span><span class="pill">15 мин</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Arco+d'Augusto+Rimini" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/borgo-san-giuliano.jpg" alt="Борго Сан-Джулиано в Римини" loading="lazy">
+            <div class="body">
+              <h3>Borgo San Giuliano</h3>
+              <p>Самый атмосферный квартал: за мостом Тиберия, муралы Феллини на Via Ariminense, piadina на Via Forzieri.</p>
+              <div class="meta"><span class="pill price">бесплатно</span><span class="pill">1–2 часа</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Borgo+San+Giuliano+Rimini" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="card pad">
+        <h3>Парковка в Римини</h3>
+        <p>Если всё же едете на машине, ставьте её на <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Tiberio+Rimini" target="_blank" rel="noopener">Parcheggio Tiberio</a> (Via Bastioni Settentrionali 6): около €1.20/ч, максимум ~€5/день, бесплатно после 20:00 и по воскресеньям. Парковка у входа в Борго, но сам Borgo San Giuliano — ZTL 24/7.</p>
+      </div>
+    </section>
+
+    <section id="santarcangelo">
+      <div class="section-title">
+        <h2>День без авто: Сантарканджело ди Романья</h2>
+        <p>22 июня в календаре — или любой свободный день до аренды. Всего 10 км от Римини: средневековый холм, панорамы Адриатики и подземные пещеры (~13 °C внутри, возьмите кофту).</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план на полдня</h3>
+          <div class="timeline">
+            <div class="step" data-time="09:30">
+              <h3>1. Как добраться из Римини</h3>
+              <p><strong>Без машины — три варианта:</strong></p>
+              <ul>
+                <li><strong>Автобус Start Romagna</strong> линия 9/90/91: от остановки Rimini Stazione FS или Rimini centro → Santarcangelo (~20–25 мин). Расписание: <a href="https://www.startromagna.it/" target="_blank" rel="noopener">startromagna.it</a>.</li>
+                <li><strong>Такси:</strong> ~€15–20, 15 минут. В навигаторе: «Santarcangelo di Romagna centro storico».</li>
+                <li><strong>На машине:</strong> SS16 на запад 10 км, парковка <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Sant'Antonio+Santarcangelo" target="_blank" rel="noopener">Parcheggio Sant'Antonio</a> (Via Sant'Antonio) — вне ZTL, ~€1/ч.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=Santarcangelo+di+Romagna&travelmode=driving" target="_blank" rel="noopener">🚗 Маршрут из Римини</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Santarcangelo+di+Romagna+centro+storico" target="_blank" rel="noopener">📍 Центр на карте</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:15">
+              <h3>2. Подъём в centro storico</h3>
+              <p><strong>Куда идти:</strong> от парковки или автобусной остановки поднимайтесь вверх по холму к крепостным воротам.</p>
+              <ul>
+                <li>Главный вход — <strong>Porta Cervese</strong> (Via Battaglia). Отсюда начинается борго на холме.</li>
+                <li>Идите по <strong>Via Battaglia</strong> и <strong>Via Ganganelli</strong> вверх — узкие улочки, арки, вид на равнину.</li>
+                <li>На <strong>Piazza Ganganelli</strong> — главная площадь с фонтаном и кафе. Здесь удобно сделать паузу.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Ganganelli+Santarcangelo" target="_blank" rel="noopener">📍 Piazza Ganganelli</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Porta+Cervese+Santarcangelo" target="_blank" rel="noopener">📍 Porta Cervese</a>
+              </div>
+            </div>
+            <div class="step" data-time="11:00">
+              <h3>3. Rocca Malatestiana и видовая площадка</h3>
+              <p><strong>Где:</strong> крепость на вершине холма, Via Rocca.</p>
+              <ul>
+                <li>От Piazza Ganganelli поднимитесь по <strong>Via Rocca</strong> (~5 мин в гору) к замку Малатеста.</li>
+                <li>С террасы Rocca — панорама на всю долину до Адриатики. Осмотр снаружи бесплатно; внутрь музея ~€3 (по желанию).</li>
+                <li>Обойдите крепость по периметру — хорошие фото с разных ракурсов.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Rocca+Malatestiana+Santarcangelo" target="_blank" rel="noopener">📍 Rocca на карте</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:00">
+              <h3>4. Пещеры Grotta Monumentale</h3>
+              <p><strong>Где:</strong> вход на Via Battaglia 7 — под centro storico целый лабиринт винных погребов и ходов (только с гидом).</p>
+              <ul>
+                <li>Экскурсия «Mysterious Santarcangelo» — ~45 мин, ~€5, слоты по расписанию. Бронь: <a href="https://iatsantarcangelo.com/en/guided-tours/mysterious-santarcangelo-the-hidden-underground-city/" target="_blank" rel="noopener">iatsantarcangelo.com</a>.</li>
+                <li>Приходите за 10 минут до начала. Внутри +13 °C — кофта обязательна.</li>
+                <li>После экскурсии — обед на Piazza Ganganelli или piadina в одной из лавок на Via Battaglia.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grotta+Monumentale+Santarcangelo" target="_blank" rel="noopener">📍 Вход в пещеры</a>
+              </div>
+            </div>
+            <div class="step" data-time="14:00">
+              <h3>5. Прогулка и возврат</h3>
+              <p>Спуститесь обратно к парковке или автобусной остановке. По пути загляните в мастерские и галереи на Via Battaglia — в Сантарканджело много ремесленников.</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Santarcangelo+di+Romagna&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Обратно в Римини</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+Sant'Antonio,+Santarcangelo/Piazza+Ganganelli,+Santarcangelo/Rocca+Malatestiana,+Santarcangelo/Grotta+Monumentale,+Santarcangelo/Rimini" target="_blank" rel="noopener">Открыть маршрут дня в Google Maps</a>
+        </article>
+
+        <article class="card photo-card">
+          <img src="images/santarcangelo.jpg" alt="Сантарканджело ди Романья" loading="lazy">
+          <div class="body">
+            <h3>Santarcangelo di Romagna</h3>
+            <p>Борго на холме в 10 км от Римини: Rocca, пещеры, ремёсла. Идеален на полдня без машины.</p>
+            <div class="meta"><span class="pill">15–20 мин от Римини</span><span class="pill price">€5 пещеры</span></div>
+            <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Santarcangelo+di+Romagna" target="_blank" rel="noopener">📍 Google Maps</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ravenna">
+      <div class="section-title">
+        <h2>24 июня — авто-день 1: Равенна</h2>
+        <p>Главный культурный выезд из Римини. Ехать около 50 км, лучше стартовать утром в первый день аренды и заранее купить комбинированный билет на мозаики.</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Равенна — 50 км от Римини (~1 ч). Centro storico компактный: после парковки всё пешком в радиусе 1 км. Билет Ravenna Mosaics Pass покрывает 4–5 монументов — покупайте заранее с тайм-слотом на Galla Placidia.</p>
+          <div class="timeline">
+            <div class="step" data-time="08:00">
+              <h3>1. Выезд из Римини</h3>
+              <p><strong>Маршрут на машине:</strong></p>
+              <ul>
+                <li><strong>Быстрее:</strong> A14 на север (Bologna), съезд Ravenna, далее указатели «centro» / «San Vitale». ~45–55 мин, платная дорога ~€3–5 в одну сторону.</li>
+                <li><strong>Дешевле:</strong> SS16 Adriatica вдоль моря — ~1 ч 10 мин, без платных участков.</li>
+                <li>В навигаторе вбивайте не «центр Равенны», а конкретную парковку (см. следующий шаг).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=Ravenna&travelmode=driving" target="_blank" rel="noopener">🚗 Маршрут Rimini → Ravenna</a>
+              </div>
+            </div>
+            <div class="step" data-time="09:10">
+              <h3>2. Парковка (вне ZTL)</h3>
+              <p><strong>Куда ставить машину:</strong> centro storico Равенны — ZTL. Лучший вариант:</p>
+              <ul>
+                <li><strong>Parcheggio San Vitale</strong> — Via di Roma 96, рядом с первыми монументами. ~€1.50/ч, ~€8/день.</li>
+                <li>Альтернатива: <strong>Largo Giustiniano</strong> или <strong>Parcheggio Largo Gardino</strong> — тоже на окраине ZTL, 5–10 мин пешком до центра.</li>
+                <li>После парковки идите пешком — в центр на машине не заезжайте.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+San+Vitale+Ravenna" target="_blank" rel="noopener">📍 Parcheggio San Vitale</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Largo+Giustiniano+Ravenna" target="_blank" rel="noopener">📍 Largo Giustiniano</a>
+              </div>
+            </div>
+            <div class="step" data-time="09:30">
+              <h3>3. San Vitale + Galla Placidia</h3>
+              <p><strong>Первые два must-see — рядом друг с другом:</strong></p>
+              <ul>
+                <li><strong>Basilica di San Vitale</strong> — Via San Vitale 17. От парковки ~5 мин пешком. Мозаики Юстиниана и Феодоры — главная причина ехать в Равенну. 45–60 мин внутри.</li>
+                <li><strong>Mausoleo di Galla Placidia</strong> — Via Capo Valdemarca, через двор от San Vitale (~2 мин). Маленький зал со звёздным синим сводом. <strong>Слот обязателен</strong> — без брони могут не пустить.</li>
+                <li>Покажите QR-код билета на входе каждого монумента.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Vitale+Ravenna" target="_blank" rel="noopener">📍 San Vitale</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Mausoleo+di+Galla+Placidia+Ravenna" target="_blank" rel="noopener">📍 Galla Placidia</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Parcheggio+San+Vitale,+Ravenna&destination=Basilica+di+San+Vitale,+Ravenna&travelmode=walking" target="_blank" rel="noopener">🚶 От парковки</a>
+              </div>
+            </div>
+            <div class="step" data-time="11:30">
+              <h3>4. Battistero Neoniano + Sant'Apollinare Nuovo</h3>
+              <p><strong>Куда идти дальше пешком (~15 мин между точками):</strong></p>
+              <ul>
+                <li>От San Vitale идите на запад по <strong>Via di Roma</strong> к <strong>Piazza Duomo</strong>.</li>
+                <li><strong>Battistero Neoniano</strong> — Piazza Duomo 1, рядом с собором. Купол с мозаиками крещения — 20–30 мин.</li>
+                <li>Затем по <strong>Via di Roma</strong> (~8 мин) к <strong>Basilica di Sant'Apollinare Nuovo</strong> — Via di Roma 53. Длинные стены с процессиями святых.</li>
+                <li>Все четыре точки входят в один пасс — не выбрасывайте билет.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Battistero+Neoniano+Ravenna" target="_blank" rel="noopener">📍 Battistero Neoniano</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Basilica+di+Sant'Apollinare+Nuovo+Ravenna" target="_blank" rel="noopener">📍 Sant'Apollinare Nuovo</a>
+                <a href="https://www.google.com/maps/dir/Basilica+di+San+Vitale,+Ravenna/Battistero+Neoniano,+Ravenna/Basilica+di+Sant'Apollinare+Nuovo,+Ravenna" target="_blank" rel="noopener">🚶 Пеший маршрут</a>
+              </div>
+            </div>
+            <div class="step" data-time="13:00">
+              <h3>5. Обед в centro storico</h3>
+              <p><strong>Куда пойти поесть:</strong> идите к <strong>Piazza del Popolo</strong> — главная площадь в 5 мин от Sant'Apollinare Nuovo.</p>
+              <ul>
+                <li><strong>Ca' de Ven</strong> — Via Corrado Ricci 24, историческая винотека, хороший обед без пафоса.</li>
+                <li><strong>Osteria del Tempo Perso</strong> — Via Gamba 12, чуть дороже, бронь желательна.</li>
+                <li>После обеда — gelato на Piazza del Popolo и прогулка по Corso Giuseppe Garibaldi (главная торговая улица).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo+Ravenna" target="_blank" rel="noopener">📍 Piazza del Popolo</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Ca'+de+Ven+Ravenna" target="_blank" rel="noopener">📍 Ca' de Ven</a>
+              </div>
+            </div>
+            <div class="step" data-time="15:00">
+              <h3>6. На выбор: Теодорих или прогулка</h3>
+              <p><strong>Вариант А — Mausoleo di Teodorico</strong> (€5, не в пассе):</p>
+              <ul>
+                <li>Via delle Pace 1 — на машине ~10 мин от центра или 25 мин пешком. Круглый мавзолей готского короля, сад вокруг.</li>
+                <li><strong>Вариант Б — пешая прогулка:</strong> Dante's Tomb (Via Dante Alighieri 9), Basilica di San Francesco, набережная канала Padenna.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Mausoleo+di+Teodorico+Ravenna" target="_blank" rel="noopener">📍 Mausoleo Teodorico</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Tomba+di+Dante+Ravenna" target="_blank" rel="noopener">📍 Tomba di Dante</a>
+              </div>
+            </div>
+            <div class="step" data-time="16:30">
+              <h3>7. Возврат в Римини</h3>
+              <p>Вернитесь к машине, выезжайте на A14 на юг (Rimini/Ancona). До Римини ~50 мин. Вечером — пляж или ужин в Borgo San Giuliano.</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Ravenna&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Ravenna → Rimini</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+San+Vitale,+Ravenna/Basilica+di+San+Vitale/Mausoleo+di+Galla+Placidia/Battistero+Neoniano/Basilica+di+Sant'Apollinare+Nuovo/Piazza+del+Popolo,+Ravenna/Rimini" target="_blank" rel="noopener">Открыть весь маршрут дня в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/ravenna-san-vitale.jpg" alt="Базилика Сан-Витале в Равенне" loading="lazy">
+            <div class="body">
+              <h3>Basilica di San Vitale</h3>
+              <p>Via San Vitale 17. Мозаики Юстиниана и Феодоры — must-see №1. От парковки San Vitale 5 мин пешком.</p>
+              <div class="meta"><span class="pill price">в пассе</span><span class="pill">45–60 мин</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Vitale+Ravenna" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/ravenna-galla-placidia.jpg" alt="Мавзолей Галлы Плацидии в Равенне" loading="lazy">
+            <div class="body">
+              <h3>Mausoleo di Galla Placidia</h3>
+              <p>Via Capo Valdemarca, через двор от San Vitale. Синий звёздный свод — бронируйте слот заранее.</p>
+              <div class="meta"><span class="pill price">пасc €12.50+</span><span class="pill">слот обязателен</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Mausoleo+di+Galla+Placidia+Ravenna" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Билет:</strong> 4-монументный пасс стоит около €12.50, 5-монументный — около €14.50. Он действует 7 дней, но на практике всё удобно пройти за один день. Покупайте на <a href="https://www.ravennamosaici.it/en/ticketoffice/" target="_blank" rel="noopener">официальном сайте Ravenna Mosaici</a>.
+      </div>
+    </section>
+
+    <section id="san-marino-gradara">
+      <div class="section-title">
+        <h2>25 июня — авто-день 2: Сан-Марино + Градара</h2>
+        <p>Самый «вау»-день по панорамам: утром отдельная республика на горе Титано, после обеда замок Градара с историей Паоло и Франчески.</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Два города за день: утром Сан-Марино на горе Титано, после обеда замок Градара. Возьмите паспорт (отдельная страна). Удобная обувь — подъёмы и брусчатка.</p>
+          <div class="timeline">
+            <div class="step" data-time="07:30">
+              <h3>1. Выезд из Римини → Сан-Марино</h3>
+              <p><strong>Маршрут:</strong> SS72 на запад в сторону Сан-Марино (~25 км, 30–40 мин). Альтернатива — через A14 до выезда Rimini Sud, затем SS72.</p>
+              <ul>
+                <li>Ранний старт критичен: к 11:00 на Титано уже много туристических групп.</li>
+                <li>На границе остановки обычно нет — просто проезжайте, паспорт держите под рукой.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=San+Marino&travelmode=driving" target="_blank" rel="noopener">🚗 Rimini → San Marino</a>
+              </div>
+            </div>
+            <div class="step" data-time="08:20">
+              <h3>2. Парковка и подъём в центр</h3>
+              <p><strong>Куда ставить машину:</strong></p>
+              <ul>
+                <li><strong>Parcheggio P9 Città</strong> — ближе всего к centro storico, ~€2.50/ч. В навигатор: «Parcheggio P9 San Marino».</li>
+                <li>Альтернатива: <strong>P11</strong> чуть ниже по склону, дешевле.</li>
+                <li><strong>Фуникулёр:</strong> паркуйтесь в <strong>Borgo Maggiore</strong>, поднимайтесь фуникулёром Funivia (~€5 туда-обратно) — красиво и без пробок на парковках наверху.</li>
+                <li>От P9 идите вверх по <strong>Contrada del Pianello</strong> к башням (~10 мин в гору).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+P9+San+Marino" target="_blank" rel="noopener">📍 Parcheggio P9</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Funivia+San+Marino+Borgo+Maggiore" target="_blank" rel="noopener">📍 Фуникулёр Borgo Maggiore</a>
+              </div>
+            </div>
+            <div class="step" data-time="09:00">
+              <h3>3. Башни, площадь, панорамы</h3>
+              <p><strong>Маршрут пешком по вершине Титано:</strong></p>
+              <ul>
+                <li><strong>Guaita (Prima Torre)</strong> — первая башня, самая фотогеничная. Вход ~€5 (или комбо на 2 башни ~€8). Поднимитесь на стены — вид на всю округу.</li>
+                <li>Идите по <strong>Passo delle Streghe</strong> (тропа между башнями, ~10 мин) — лучшие панорамы Адриатики.</li>
+                <li><strong>Cesta (Seconda Torre)</strong> — вторая башня на вершине, музей старинного оружия. По желанию.</li>
+                <li><strong>Piazza della Libertà</strong> — главная площадь с <strong>Palazzo Pubblico</strong> (ратуша, снаружи бесплатно). Здесь же сувениры и кафе.</li>
+                <li>Если одна башня — выбирайте <strong>Guaita</strong>.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Guaita+Tower+San+Marino" target="_blank" rel="noopener">📍 Guaita</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Liberta+San+Marino" target="_blank" rel="noopener">📍 Piazza della Libertà</a>
+                <a href="https://www.google.com/maps/dir/Guaita+Tower,+San+Marino/Passo+delle+Streghe,+San+Marino/Cesta+Tower,+San+Marino/Piazza+della+Liberta,+San+Marino" target="_blank" rel="noopener">🚶 Маршрут по башням</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:00">
+              <h3>4. Обед на Титано</h3>
+              <p><strong>Где поесть:</strong></p>
+              <ul>
+                <li><strong>La Terrazza</strong> — Contrada del Pianello, панорамный ресторан (дороже, бронь желательна).</li>
+                <li>Бюджет: piadina, панини, паста в переулках <strong>Contrada del Collegio</strong> и <strong>Via Basilicius</strong> — на 1–2 улицы от Piazza della Libertà, дешевле.</li>
+                <li>После обеда спускайтесь к машине (или к фуникулёру в Borgo Maggiore).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=La+Terrazza+San+Marino" target="_blank" rel="noopener">📍 La Terrazza</a>
+              </div>
+            </div>
+            <div class="step" data-time="13:15">
+              <h3>5. Переезд в Градару</h3>
+              <p><strong>Маршрут:</strong> от Сан-Марино на юг через <strong>SP20/SP42</strong> к Градаре (~35–40 мин, холмистая дорога с видами).</p>
+              <ul>
+                <li>В навигатор: <strong>Parcheggio Piazzale Paolo e Francesca</strong> — главная парковка у подножия борго, ~€2/ч.</li>
+                <li>Не въезжайте в centro storico Градары на машине — узкие улочки и ZTL.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=San+Marino&destination=Gradara&travelmode=driving" target="_blank" rel="noopener">🚗 San Marino → Gradara</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Piazzale+Paolo+e+Francesca+Gradara" target="_blank" rel="noopener">📍 Парковка Градара</a>
+              </div>
+            </div>
+            <div class="step" data-time="14:15">
+              <h3>6. Rocca di Gradara</h3>
+              <p><strong>Как попасть в замок:</strong></p>
+              <ul>
+                <li>От парковки поднимайтесь пешком по <strong>Via alla Rocca</strong> через borgo (~10 мин в гору). Красные кирпичные стены видны издалека.</li>
+                <li>Вход в <strong>Rocca</strong> — касса у ворот. Билет ~€10 (замок), ~€12 (замок + camminamenti по стенам).</li>
+                <li>Внутри: залы, музей, смотровые площадки. История Паоло и Франчески — местная легенда из «Божественной комедии».</li>
+                <li>Заложьте 2–2.5 часа на замок и прогулку по borgo.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Rocca+di+Gradara" target="_blank" rel="noopener">📍 Rocca di Gradara</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Parcheggio+Piazzale+Paolo+e+Francesca,+Gradara&destination=Rocca+di+Gradara&travelmode=walking" target="_blank" rel="noopener">🚶 От парковки к замку</a>
+              </div>
+            </div>
+            <div class="step" data-time="17:30">
+              <h3>7. Возврат в Римини</h3>
+              <p>От Градары до Римини ~30 мин по SS16 или A14. Ужин у моря — Marina Centro или Borgo San Giuliano.</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Gradara&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Gradara → Rimini</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+P9+San+Marino/Guaita+Tower,+San+Marino/Piazza+della+Liberta,+San+Marino/Parcheggio+Piazzale+Paolo+e+Francesca,+Gradara/Rocca+di+Gradara/Rimini" target="_blank" rel="noopener">Открыть весь маршрут дня в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/san-marino-guaita.jpg" alt="Крепость Guaita в Сан-Марино" loading="lazy">
+            <div class="body">
+              <h3>San Marino</h3>
+              <p>Республика на Monte Titano. Guaita → Passo delle Streghe → Piazza della Libertà. Парковка P9 или фуникулёр из Borgo Maggiore.</p>
+              <div class="meta"><span class="pill price">€5–11</span><span class="pill">3–4 часа</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=San+Marino+historic+center" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/gradara-castle.jpg" alt="Замок Градара" loading="lazy">
+            <div class="body">
+              <h3>Rocca di Gradara</h3>
+              <p>Via alla Rocca — подъём от парковки Paolo e Francesca. Красный кирпич, стены, вид на Адриатику.</p>
+              <div class="meta"><span class="pill price">€10–12</span><span class="pill">2–3 часа</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Rocca+di+Gradara" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="urbino">
+      <div class="section-title">
+        <h2>26 июня — авто-день 3: Урбино</h2>
+        <p>Ренессанс, Palazzo Ducale, холмы Марке и камерный исторический центр. Последний день аренды: после Урбино можно сразу вернуть машину вечером или оставить до утра 27-го.</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Урбино — город на холме, UNESCO. Centro storico полностью ZTL: машина только у подножия. Дорога из Римини ~80 км, 1.5 ч по извилистым SS423 через Пезаро.</p>
+          <div class="timeline">
+            <div class="step" data-time="08:00">
+              <h3>1. Выезд из Римини</h3>
+              <p><strong>Маршрут:</strong> A14 до Пезаро (Pesaro-Urbino), затем <strong>SS423</strong> на Урбино (~30 км горной дороги).</p>
+              <ul>
+                <li>Общее время ~1 ч 20 мин – 1 ч 40 мин. Дорога узкая и извилистая — не торопитесь.</li>
+                <li>Заправьтесь в Римини или Пезаро: на холмах заправки редкие.</li>
+                <li>В навигатор вбивайте <strong>Parcheggio Mercatale</strong>, не «centro Urbino».</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=Urbino&travelmode=driving" target="_blank" rel="noopener">🚗 Rimini → Urbino</a>
+              </div>
+            </div>
+            <div class="step" data-time="09:30">
+              <h3>2. Парковка Mercatale + подъём</h3>
+              <p><strong>Где оставить машину:</strong> <strong>Parcheggio Mercatale</strong> (Via Mercatale / Piazzale Mercatale) — у подножия холма, ~€1.50/ч.</p>
+              <ul>
+                <li><strong>Scala Mobile</strong> — бесплатный эскалатор/лифт в centro storico (если работает — проверьте табло у входа). Вход рядом с парковкой.</li>
+                <li>Если лифт не работает: подъём пешком по <strong>Via Mazzini</strong> (~15–20 мин в гору, круто).</li>
+                <li>В centro storico на машине не заезжайте — камеры ZTL.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Mercatale+Urbino" target="_blank" rel="noopener">📍 Parcheggio Mercatale</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Scala+Mobile+Urbino" target="_blank" rel="noopener">📍 Scala Mobile (лифт)</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:00">
+              <h3>3. Palazzo Ducale</h3>
+              <p><strong>Где:</strong> Piazza Rinascimento 13 — в самом сердце centro storico, сразу наверху холма.</p>
+              <ul>
+                <li>Главный музей: <strong>Galleria Nazionale delle Marche</strong> — залы дворца, картины Пьеро делла Франческа, Тициана, Рафаэля. Билет ~€12, бронь на <a href="https://gndm.it/en/visit/" target="_blank" rel="noopener">gndm.it</a>.</li>
+                <li>Заложьте <strong>2–3 часа</strong>. Внутри лабиринт залов — берите план на входе.</li>
+                <li>Двор (cortile) можно осмотреть снаружи бесплатно, но must-see — именно музей внутри.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale+Urbino" target="_blank" rel="noopener">📍 Palazzo Ducale</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Parcheggio+Mercatale,+Urbino&destination=Palazzo+Ducale,+Urbino&travelmode=walking" target="_blank" rel="noopener">🚶 От парковки (пешком)</a>
+              </div>
+            </div>
+            <div class="step" data-time="13:30">
+              <h3>4. Обед в centro storico</h3>
+              <p><strong>Где есть:</strong> улочки вокруг Piazza Rinascimento и Via Mazzini.</p>
+              <ul>
+                <li>Must-try: <strong>crescia sfogliata</strong> — тонкая лепёшка с начинкой (сыр, копчёности, овощи). Ищите панини-лавки и osterie.</li>
+                <li>Рестораны закрывают кухню ~14:30 — приходите до 13:00 или бронируйте.</li>
+                <li>Кофе после обеда на <strong>Piazza della Repubblica</strong> — главная площадь с видом на дворец.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Repubblica+Urbino" target="_blank" rel="noopener">📍 Piazza della Repubblica</a>
+              </div>
+            </div>
+            <div class="step" data-time="15:00">
+              <h3>5. Рафаэль, площади, панорама</h3>
+              <p><strong>Пеший маршрут по centro storico (~1.5 ч):</strong></p>
+              <ul>
+                <li><strong>Casa Natale di Raffaello</strong> — Via Raffaello 57 (~5 мин от дворца). Дом, где родился Рафаэль. Вход ~€5, по желанию.</li>
+                <li><strong>Duomo di Urbino</strong> — Piazza Pascoli, рядом с дворцом. Снаружи и внутри бесплатно/дёшево.</li>
+                <li><strong>Fortezza Albornoz</strong> — Via Albornoz, на краю холма. Лучшая бесплатная панорама на город и холмы Марке. ~15 мин пешком от центра.</li>
+                <li>Спускайтесь обратно к Mercatale тем же путём (лифт или Via Mazzini).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Casa+Natale+di+Raffaello+Urbino" target="_blank" rel="noopener">📍 Casa di Raffaello</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Fortezza+Albornoz+Urbino" target="_blank" rel="noopener">📍 Fortezza Albornoz</a>
+                <a href="https://www.google.com/maps/dir/Palazzo+Ducale,+Urbino/Casa+Natale+di+Raffaello,+Urbino/Fortezza+Albornoz,+Urbino" target="_blank" rel="noopener">🚶 Пеший маршрут</a>
+              </div>
+            </div>
+            <div class="step" data-time="17:30">
+              <h3>6. Возврат в Римини</h3>
+              <p>Тот же путь через SS423 и A14 (~1.5 ч). Последний день аренды — можно сдать машину сразу по возвращении или утром 27-го.</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Urbino&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Urbino → Rimini</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+Mercatale,+Urbino/Palazzo+Ducale,+Urbino/Casa+Natale+di+Raffaello,+Urbino/Fortezza+Albornoz,+Urbino/Rimini" target="_blank" rel="noopener">Открыть весь маршрут дня в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/urbino-palazzo.jpg" alt="Палаццо Дукале в Урбино" loading="lazy">
+            <div class="body">
+              <h3>Palazzo Ducale</h3>
+              <p>Piazza Rinascimento 13. Galleria Nazionale delle Marche — Пьеро делла Франческа, дворцовые залы. 2–3 ч внутри.</p>
+              <div class="meta"><span class="pill price">€12</span><span class="pill">2–3 часа</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale+Urbino" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/urbino-panorama.jpg" alt="Панорама Урбино" loading="lazy">
+            <div class="body">
+              <h3>Fortezza Albornoz</h3>
+              <p>Via Albornoz — смотровая на краю холма. 15 мин пешком от Palazzo Ducale, вход бесплатный.</p>
+              <div class="meta"><span class="pill price">бесплатно</span><span class="pill">30–45 мин</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Fortezza+Albornoz+Urbino" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="optional-ferrara">
+      <div class="section-title">
+        <h2>Опциональный день 4: Феррара</h2>
+        <p>Если после основных трёх выездов захочется ещё — Феррара даёт другой Ренессанс: велосипедный город, Castello Estense и спокойный centro storico UNESCO. Нужна новая аренда на 1 день или поезд Regional из Римини (~1.5–2 ч).</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Феррара — плоский велосипедный город с UNESCO centro storico. 160 км от Римини. ZTL строгая: парковка вне центра, дальше всё пешком (или на велосипеде ~€5–10/день).</p>
+          <div class="timeline">
+            <div class="step" data-time="08:00">
+              <h3>1. Выезд из Римини</h3>
+              <p><strong>Маршрут:</strong> A14 на север до съезда Ferrara Sud/Nord (~1 ч 40 мин, 160 км).</p>
+              <ul>
+                <li>Платная дорога ~€8–12 в одну сторону. Альтернатива — Regional поезд из Rimini (~1.5–2 ч, без ZTL-проблем).</li>
+                <li>В навигатор: парковка, не «Castello Estense» — иначе заведёт в ZTL.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=Ferrara&travelmode=driving" target="_blank" rel="noopener">🚗 Rimini → Ferrara</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:00">
+              <h3>2. Парковка вне ZTL</h3>
+              <p><strong>Куда ставить машину:</strong></p>
+              <ul>
+                <li><strong>Parcheggio Ex MOF</strong> — Viale Alfonso d'Este, большая парковка у centro storico, ~€1/ч.</li>
+                <li><strong>Parcheggio Kennedy</strong> — Via Kennedy, тоже удобно для центра.</li>
+                <li><strong>У вокзала</strong> (Stazione Ferrara) — если Ex MOF занят.</li>
+                <li>До Castello Estense от любой из них ~10–15 мин пешком.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Ex+MOF+Ferrara" target="_blank" rel="noopener">📍 Parcheggio Ex MOF</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Kennedy+Ferrara" target="_blank" rel="noopener">📍 Parcheggio Kennedy</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:30">
+              <h3>3. Castello Estense</h3>
+              <p><strong>Где:</strong> Largo Castello 1 — квадратный замок с рвом в самом центре, невозможно не заметить.</p>
+              <ul>
+                <li>Вход с моста через ров. Билет ~€12, башня Torre dei Leoni +€2. Вт–Вс 10:00–18:00, <strong>закрыт по вторникам</strong>.</li>
+                <li>Внутри: квартиры династии Эсте, подземная тюрьма, смотровые площадки. 1.5–2 часа.</li>
+                <li>С моста замка — лучшие фото рва и башен.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Castello+Estense+Ferrara" target="_blank" rel="noopener">📍 Castello Estense</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Parcheggio+Ex+MOF,+Ferrara&destination=Castello+Estense,+Ferrara&travelmode=walking" target="_blank" rel="noopener">🚶 От парковки</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:30">
+              <h3>4. Centro storico пешком</h3>
+              <p><strong>Маршрут от замка (~1 ч):</strong></p>
+              <ul>
+                <li>От Castello идите на север по <strong>Corso Ercole I d'Este</strong> — ренессансная ось с воротами и дворцами (Palazzo dei Diamanti на Corso Biagio Rossetti 44 — фасад «алмазной» кладки, снаружи бесплатно).</li>
+                <li>Затем к <strong>Duomo di Ferrara</strong> (Piazza della Cattedrale) — собор с фасадом в полоску.</li>
+                <li><strong>Piazza Trento e Trieste</strong> — живая центральная площадь с кафе.</li>
+                <li>Феррара — город велосипедов: аренда у вокзала или centro (~€5–10/день), если хотите больше охватить.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Corso+Ercole+I+d'Este+Ferrara" target="_blank" rel="noopener">📍 Corso Ercole I d'Este</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+dei+Diamanti+Ferrara" target="_blank" rel="noopener">📍 Palazzo dei Diamanti</a>
+                <a href="https://www.google.com/maps/dir/Castello+Estense,+Ferrara/Corso+Ercole+I+d'Este,+Ferrara/Duomo+di+Ferrara" target="_blank" rel="noopener">🚶 Пеший маршрут</a>
+              </div>
+            </div>
+            <div class="step" data-time="13:30">
+              <h3>5. Обед</h3>
+              <p><strong>Что заказать:</strong> <strong>cappellacci di zucca</strong> (паста с тыквой) — фирменное блюдо Феррары.</p>
+              <ul>
+                <li>Район замка и Corso Porta Reno — много trattoria. Приходите до 13:00 или бронируйте.</li>
+                <li>После обеда — gelato на Piazza Trento e Trieste.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Trento+e+Trieste+Ferrara" target="_blank" rel="noopener">📍 Piazza Trento e Trieste</a>
+              </div>
+            </div>
+            <div class="step" data-time="15:30">
+              <h3>6. Стены или музей</h3>
+              <p><strong>На выбор:</strong></p>
+              <ul>
+                <li><strong>Mura di Ferrara</strong> — крепостные стены (~9 км вокруг города). Популярный участок: от Porta Paola, прогулка/велопрогулка бесплатно.</li>
+                <li><strong>Museo della Cattedrale</strong> — Via San Romano 1, сокровища собора (~€6).</li>
+                <li>Если устали — просто прогулка по Via delle Volte (средневековые арки).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Mura+di+Ferrara+Porta+Paola" target="_blank" rel="noopener">📍 Mura di Ferrara</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Via+delle+Volte+Ferrara" target="_blank" rel="noopener">📍 Via delle Volte</a>
+              </div>
+            </div>
+            <div class="step" data-time="17:00">
+              <h3>7. Возврат в Римини</h3>
+              <p>A14 на юг, ~1 ч 40 мин. Выезжайте до 18:00, чтобы не попасть в вечерний трафик.</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Ferrara&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Ferrara → Rimini</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+Ex+MOF,+Ferrara/Castello+Estense,+Ferrara/Corso+Ercole+I+d'Este,+Ferrara/Duomo+di+Ferrara,+Ferrara/Rimini" target="_blank" rel="noopener">Открыть весь маршрут дня в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/ferrara-castello.jpg" alt="Замок Эсте в Ферраре" loading="lazy">
+            <div class="body">
+              <h3>Castello Estense</h3>
+              <p>Largo Castello 1 — вход с моста через ров. Средневековый замок Эсте, must-see Феррары.</p>
+              <div class="meta"><span class="pill price">€12 (+€2 башня)</span><span class="pill">1.5–2 ч</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Castello+Estense+Ferrara" target="_blank" rel="noopener">📍 Google Maps</a>
+              <a href="https://www.castelloestense.it/en/information/prices" target="_blank" rel="noopener">Билеты и часы</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/ferrara-corso.jpg" alt="Castello Estense в Ферраре" loading="lazy">
+            <div class="body">
+              <h3>Corso Ercole I d'Este</h3>
+              <p>От Castello на север — Palazzo dei Diamanti, ворота, ренессансные дворцы. 45–60 мин пешком.</p>
+              <div class="meta"><span class="pill price">бесплатно</span><span class="pill">45–60 мин</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Corso+Ercole+I+d'Este+Ferrara" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="optional-bologna">
+      <div class="section-title">
+        <h2>Опциональный день 5: Болонья</h2>
+        <p>Столица Эмилии-Романьи: портики, Две башни, рынки и одна из лучших кухонь Италии. День насыщенный, но ZTL строгая — паркуйтесь за пределами centro storico.</p>
+      </div>
+
+      <div class="day">
+        <article class="card pad">
+          <h3>Пошаговый план</h3>
+          <p style="margin:0 0 14px;color:var(--muted)">Болонья — 120 км от Римини. ZTL одна из самых жёстких в Италии: паркуйтесь на Staveco и идите пешком под портиками. Город компактный — за день можно обойти центр без спешки.</p>
+          <div class="timeline">
+            <div class="step" data-time="07:30">
+              <h3>1. Ранний выезд из Римини</h3>
+              <p><strong>Маршрут:</strong> A14 на север, съезд Bologna San Lazzaro / Bologna Arcoveggio (~1.5–2 ч, 120 км).</p>
+              <ul>
+                <li>Платная дорога ~€10–12 в одну сторону.</li>
+                <li>Выезжайте до 8:00 — иначе пробки на въезде в Болонью.</li>
+                <li>В навигатор: <strong>Parcheggio Staveco</strong>, не Piazza Maggiore.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Rimini&destination=Bologna&travelmode=driving" target="_blank" rel="noopener">🚗 Rimini → Bologna</a>
+              </div>
+            </div>
+            <div class="step" data-time="09:30">
+              <h3>2. Парковка Staveco (вне ZTL)</h3>
+              <p><strong>Где:</strong> Viale Panzacchi 10 — крупная парковка на окраине centro storico.</p>
+              <ul>
+                <li>~€2/ч или комбо park-and-ride ~€3 + автобус TPER ~€1.50 до центра.</li>
+                <li>Но проще: <strong>15 мин пешком</strong> по Viale Panzacchi → Via Irnerio → к Piazza Maggiore. Портики начинаются по пути.</li>
+                <li>Не паркуйтесь ближе к центру «наугад» — камеры ZTL штрафуют мгновенно (€80–165).</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Staveco+Bologna" target="_blank" rel="noopener">📍 Parcheggio Staveco</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Parcheggio+Staveco,+Bologna&destination=Piazza+Maggiore,+Bologna&travelmode=walking" target="_blank" rel="noopener">🚶 До центра пешком</a>
+              </div>
+            </div>
+            <div class="step" data-time="10:00">
+              <h3>3. Piazza Maggiore + Due Torri</h3>
+              <p><strong>Старт в центре:</strong></p>
+              <ul>
+                <li><strong>Piazza Maggiore</strong> — главная площадь. Здесь Palazzo d'Accursio (ратуша), Palazzo del Podestà, фонтан Нептуна.</li>
+                <li><strong>Basilica di San Petronio</strong> — на площади, огромный незаконченный фасад. Внутрь бесплатно (некоторые капеллы ~€2).</li>
+                <li>От площади идите на восток 2 мин к <strong>Le Due Torri</strong> (Piazza di Porta Ravegnana): <strong>Asinelli</strong> (высокая, подъём ~€5, 498 ступеней) и наклонённая <strong>Garisenda</strong>.</li>
+                <li>Подъём на Asinelli — по желанию, бронируйте слот онлайн в сезон.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore+Bologna" target="_blank" rel="noopener">📍 Piazza Maggiore</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Le+Due+Torri+Bologna" target="_blank" rel="noopener">📍 Due Torri</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Petronio+Bologna" target="_blank" rel="noopener">📍 San Petronio</a>
+              </div>
+            </div>
+            <div class="step" data-time="12:00">
+              <h3>4. Quadrilatero — рынок</h3>
+              <p><strong>Как дойти:</strong> от Piazza Maggiore на север через арки — вы в <strong>Quadrilatero</strong> (улочки Via Drapperie, Via Pescherie Vecchie, Via Clavature).</p>
+              <ul>
+                <li>Средневековый рынок: сыры, прошутто, паста, специи, вино. Лучшее место для aperitivo.</li>
+                <li>Mercato di Mezzo — крытый food court на Via Clavature 12 (формаджо, вино, лёгкий обед).</li>
+                <li>Попробуйте mortadella — она родом отсюда.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Quadrilatero+Bologna" target="_blank" rel="noopener">📍 Quadrilatero</a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Piazza+Maggiore,+Bologna&destination=Quadrilatero,+Bologna&travelmode=walking" target="_blank" rel="noopener">🚶 От площади к рынку</a>
+              </div>
+            </div>
+            <div class="step" data-time="13:30">
+              <h3>5. Обед</h3>
+              <p><strong>Что заказать:</strong> tagliatelle al ragù (не «спагетти болоньезе»!), tortellini in brodo, cotoletta alla Bolognese.</p>
+              <ul>
+                <li>Район Quadrilatero и Via del Pratello — много trattoria. Бронируйте заранее в популярных местах.</li>
+                <li>Кухня закрывается ~14:30 — не опаздывайте.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Via+del+Pratello+Bologna" target="_blank" rel="noopener">📍 Via del Pratello (рестораны)</a>
+              </div>
+            </div>
+            <div class="step" data-time="15:00">
+              <h3>6. Портики, Archiginnasio, Santo Stefano</h3>
+              <p><strong>Пеший маршрут под портиками (~1 ч):</strong></p>
+              <ul>
+                <li>От Piazza Maggiore идите на юг по <strong>Via dell'Archiginnasio</strong> к <strong>Archiginnasio</strong> — бывший университет, анатомический театр (~€3).</li>
+                <li>Далее к <strong>Basilica di Santo Stefano</strong> (Via Santo Stefano 24) — комплекс из 7 церквей, «мини-Иерусалим». ~€5.</li>
+                <li>Болонья — город портиков (~40 км!). Просто идите под навесами — это уже достопримечательность.</li>
+                <li>Университетский квартал вокруг Via Zamboni — молодая атмосфера, кафе.</li>
+              </ul>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/search/?api=1&query=Archiginnasio+Bologna" target="_blank" rel="noopener">📍 Archiginnasio</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Basilica+di+Santo+Stefano+Bologna" target="_blank" rel="noopener">📍 Santo Stefano</a>
+                <a href="https://www.google.com/maps/dir/Piazza+Maggiore,+Bologna/Archiginnasio,+Bologna/Basilica+di+Santo+Stefano,+Bologna" target="_blank" rel="noopener">🚶 Пеший маршрут</a>
+              </div>
+            </div>
+            <div class="step" data-time="17:00">
+              <h3>7. Возврат в Римини</h3>
+              <p>Вернитесь к Staveco пешком, выезжайте на A14 на юг (~2 ч). Не заезжайте в ZTL даже «на минуту».</p>
+              <div class="step-links">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Bologna&destination=Rimini&travelmode=driving" target="_blank" rel="noopener">🚗 Bologna → Rimini</a>
+              </div>
+            </div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Parcheggio+Staveco,+Bologna/Piazza+Maggiore,+Bologna/Le+Due+Torri,+Bologna/Quadrilatero,+Bologna/Archiginnasio,+Bologna/Basilica+di+Santo+Stefano,+Bologna/Rimini" target="_blank" rel="noopener">Открыть весь маршрут дня в Google Maps</a>
+        </article>
+
+        <div class="grid">
+          <article class="card photo-card">
+            <img src="images/bologna-towers.jpg" alt="Две башни Болоньи" loading="lazy">
+            <div class="body">
+              <h3>Le Due Torri</h3>
+              <p>Piazza di Porta Ravegnana. Asinelli — подъём 498 ступеней (~€5), Garisenda — наклонённая, символ города.</p>
+              <div class="meta"><span class="pill price">~€5</span><span class="pill">30–45 мин</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Le+Due+Torri+Bologna" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+          <article class="card photo-card">
+            <img src="images/bologna-piazza.jpg" alt="Пьяцца Маджоре в Болонье" loading="lazy">
+            <div class="body">
+              <h3>Piazza Maggiore</h3>
+              <p>Главная площадь: San Petronio, фонтан Нептуна, Palazzo d'Accursio. Старт дня, 15 мин пешком от Staveco.</p>
+              <div class="meta"><span class="pill price">бесплатно</span><span class="pill">1 ч</span></div>
+              <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore+Bologna" target="_blank" rel="noopener">📍 Google Maps</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="note warning">
+        <strong>ZTL в Болонье:</strong> с 07:00 до 20:00 ежедневно. Для туристов есть цифровой билет €6/день, но проще и безопаснее парковаться на Staveco и идти пешком. Зону T (Via Rizzoli, Via Indipendenza) лучше вообще не трогать на машине.
+      </div>
+    </section>
+
+    <section id="extras">
+      <div class="section-title">
+        <h2>Бонусные места рядом с Римини</h2>
+        <p>Короткие выезды без полного дня: удобны в свободные часы или если не поедете в Феррару/Болонью.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card photo-card">
+          <img src="images/santarcangelo.jpg" alt="Сантарканджело ди Романья" loading="lazy">
+          <div class="body">
+            <h3>Santarcangelo di Romagna</h3>
+            <p>10 км от Римини. Подробный пошаговый план — в разделе <a href="#santarcangelo">Сантарканджело</a> выше.</p>
+            <ul>
+              <li>Автобус Start Romagna из Римини (~20 мин) или такси ~€15.</li>
+              <li>Подъём к Piazza Ganganelli → Rocca → пещеры Via Battaglia 7.</li>
+            </ul>
+            <div class="meta"><span class="pill">15–20 мин</span><span class="pill price">€5</span></div>
+            <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Santarcangelo+di+Romagna" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a href="https://iatsantarcangelo.com/en/guided-tours/mysterious-santarcangelo-the-hidden-underground-city/" target="_blank" rel="noopener">Бронь пещер</a>
+          </div>
+        </article>
+        <article class="card photo-card">
+          <img src="images/san-leo.jpg" alt="Крепость Сан-Лео" loading="lazy">
+          <div class="body">
+            <h3>San Leo</h3>
+            <p>Крепость на отвесной скале, ~45 мин от Римини по SP258/SP44.</p>
+            <ul>
+              <li>Парковка <strong>Parcheggio San Leo</strong> у подножия — дальше пешком вверх к Piazza Dante Alighieri.</li>
+              <li><strong>Fortezza di San Leo</strong> — вход ~€11, связана с графом Калиостро. 1.5–2 ч.</li>
+              <li>Можно совместить с <strong>Verucchio</strong> (Rocca Malatestiana, 20 мин по дороге).</li>
+            </ul>
+            <div class="meta"><span class="pill">45–50 мин</span><span class="pill price">€11</span></div>
+            <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Fortezza+di+San+Leo" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Fortezza+di+San+Leo,+San+Leo/Rimini" target="_blank" rel="noopener" style="margin-top:8px;font-size:13px">Маршрут из Римини</a>
+            <a href="https://www.san-leo.it/info-orari-tariffe/" target="_blank" rel="noopener">Часы и билеты</a>
+          </div>
+        </article>
+        <article class="card photo-card">
+          <img src="images/italia-miniatura.jpg" alt="Italia in Miniatura" loading="lazy">
+          <div class="body">
+            <h3>Italia in Miniatura</h3>
+            <p>Парк миниатюр — Via Popilia 239, Viserba (район Римини), 10 мин от центра.</p>
+            <ul>
+              <li>Парковка бесплатная на месте. В навигатор: «Italia in Miniatura».</li>
+              <li>Миниатюры всей Италии + аттракционы. Заложьте 3–4 ч.</li>
+              <li>Билеты от ~€24–27 онлайн дешевле.</li>
+            </ul>
+            <div class="meta"><span class="pill">10 мин от Римини</span><span class="pill price">€24+</span></div>
+            <a class="maps-pin" href="https://www.google.com/maps/search/?api=1&query=Italia+in+Miniatura+Viserba" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="map-link" href="https://www.google.com/maps/dir/Rimini/Italia+in+Miniatura,+Viserba/Rimini" target="_blank" rel="noopener" style="margin-top:8px;font-size:13px">Маршрут из Римини</a>
+            <a href="https://www.italiainminiatura.com/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="food">
+      <div class="section-title">
+        <h2>Где поесть и отдохнуть</h2>
+        <p>В регионе не нужно гнаться за дорогими экскурсионными ресторанами. Главное — piadina, cassoni, паста, рыба Адриатики и простые остерии.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card pad">
+          <h3>Римини</h3>
+          <ul>
+            <li><strong><a href="https://www.google.com/maps/search/?api=1&query=Nud+e+Crud+Rimini" target="_blank" rel="noopener">Nud e Crud</a></strong> — Via Forzieri 4, Borgo San Giuliano. Piadina и cassoni.</li>
+            <li><strong><a href="https://www.google.com/maps/search/?api=1&query=Osteria+de+Borg+Rimini" target="_blank" rel="noopener">Osteria de Borg</a></strong> — Via Forzieri 22, домашняя паста, бронь на вечер.</li>
+            <li><strong><a href="https://www.google.com/maps/search/?api=1&query=La+Casina+del+Bosco+Rimini" target="_blank" rel="noopener">La Casina del Bosco</a></strong> — piadina у Marina Centro.</li>
+          </ul>
+        </article>
+        <article class="card pad">
+          <h3>Равенна</h3>
+          <ul>
+            <li><strong><a href="https://www.google.com/maps/search/?api=1&query=Ca'+de+Ven+Ravenna" target="_blank" rel="noopener">Ca' de Ven</a></strong> — Via Corrado Ricci 24, обед в centro storico.</li>
+            <li><strong><a href="https://www.google.com/maps/search/?api=1&query=Osteria+del+Tempo+Perso+Ravenna" target="_blank" rel="noopener">Osteria del Tempo Perso</a></strong> — Via Gamba 12, бронь желательна.</li>
+            <li><strong>Gelato</strong> на Piazza del Popolo после мозаик — <a href="https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo+Ravenna" target="_blank" rel="noopener">📍 карта</a>.</li>
+          </ul>
+        </article>
+        <article class="card pad">
+          <h3>Опциональные города</h3>
+          <ul>
+            <li><strong>Ferrara:</strong> cappellacci di zucca, salama da sugo, вино из региона.</li>
+            <li><strong>Bologna:</strong> tagliatelle al ragù, tortellini, mortadella в Quadrilatero.</li>
+            <li><strong>San Marino / Urbino:</strong> piadina, crescia sfogliata, простые траттории на холмах.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="budget">
+      <div class="section-title">
+        <h2>Бюджет на 3 авто-дня (24–26 июня)</h2>
+        <p>Ориентир на 2 взрослых без платных экскурсий. Опциональные дни в Феррару и Болонью добавят ещё €80–150 на двоих (топливо, парковка, еда).</p>
+      </div>
+
+      <table aria-label="Бюджет поездки">
+        <thead>
+          <tr>
+            <th>Статья</th>
+            <th>Ориентир</th>
+            <th>Комментарий</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Аренда авто на 3 дня</td>
+            <td>€75–180</td>
+            <td>Летом часто дороже, чем базовые рекламные €15–25/день. Проверьте страховку и депозит.</td>
+          </tr>
+          <tr>
+            <td>Топливо</td>
+            <td>€45–70</td>
+            <td>Маршруты: Равенна, Сан-Марино + Градара, Урбино. Примерно 350–450 км с запасом.</td>
+          </tr>
+          <tr>
+            <td>Платные дороги</td>
+            <td>€10–25</td>
+            <td>Можно экономить, выбирая SS16/обычные дороги, но в жару иногда лучше заплатить за скорость.</td>
+          </tr>
+          <tr>
+            <td>Парковки</td>
+            <td>€25–40</td>
+            <td>Ставьте машину у ZTL и идите пешком.</td>
+          </tr>
+          <tr>
+            <td>Билеты</td>
+            <td>€60–100 на человека</td>
+            <td>Равенна, Урбино, Градара, Сан-Марино, опционально Сантарканджело или Сан-Лео.</td>
+          </tr>
+          <tr>
+            <td>Еда в поездках</td>
+            <td>€90–170 на двоих</td>
+            <td>Если выбирать piadina/простые остерии, можно держать ближе к нижней границе.</td>
+          </tr>
+          <tr>
+            <td><strong>Итого</strong></td>
+            <td><strong>€350–585 на двоих</strong></td>
+            <td>Без проживания и пляжных лежаков.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tips">
+      <div class="section-title">
+        <h2>Практическая шпаргалка</h2>
+        <p>Короткие правила, которые лучше сохранить в телефоне перед тем, как брать машину.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card pad">
+          <h3>Вождение и парковки</h3>
+          <ul>
+            <li>Скорость: город 50 км/ч, обычные дороги 90 км/ч, автострада 130 км/ч, если знаки не говорят иначе.</li>
+            <li>Не въезжайте в ZTL даже «на минуту». Камеры работают автоматически.</li>
+            <li>В навигаторе ищите: Parcheggio, Parking, P+R, а не центральную площадь.</li>
+            <li>На платной дороге берите билет на въезде и оплачивайте картой/наличными на выезде. В полосу Telepass не заезжайте, если в машине нет устройства.</li>
+          </ul>
+        </article>
+        <article class="card pad">
+          <h3>Что взять с собой в выезды</h3>
+          <ul>
+            <li>Вода, кепка, солнцезащитный крем. В конце июня в городах на камне жарче, чем у моря.</li>
+            <li>Удобная обувь: Сан-Марино, Градара и Урбино — подъёмы, брусчатка, ступени.</li>
+            <li>Лёгкая кофта для пещер Сантарканджело.</li>
+            <li>Пауэрбанк: навигация, билеты и фото быстро разряжают телефон.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="grid two">
+        <article class="card pad">
+          <h3>Полезные ссылки</h3>
+          <ul>
+            <li><a href="https://www.ravennamosaici.it/en/ticketoffice/" target="_blank" rel="noopener">Ravenna Mosaici: билеты</a></li>
+            <li><a href="https://www.sanmarino.sm/on-line/en/home/tourism.html" target="_blank" rel="noopener">Официальный туризм Сан-Марино</a></li>
+            <li><a href="https://www.coopculture.it/en/products/ticket-for-rocca-of-gradara/" target="_blank" rel="noopener">Rocca di Gradara: билеты</a></li>
+            <li><a href="https://gndm.it/en/visit/" target="_blank" rel="noopener">Urbino Palazzo Ducale: билеты</a></li>
+            <li><a href="https://iatsantarcangelo.com/en/guided-tours/mysterious-santarcangelo-the-hidden-underground-city/" target="_blank" rel="noopener">Santarcangelo: пещеры</a></li>
+            <li><a href="https://www.castelloestense.it/en/information/prices" target="_blank" rel="noopener">Ferrara: Castello Estense</a></li>
+            <li><a href="https://www.bolognawelcome.com/en/other/other/limited-traffic-area-ztl-en" target="_blank" rel="noopener">Bologna: правила ZTL</a></li>
+            <li><a href="https://www.autostrade.it/en/pedaggio" target="_blank" rel="noopener">Autostrade: платные дороги</a></li>
+          </ul>
+        </article>
+        <article class="card pad">
+          <h3>Экстренно и полезно</h3>
+          <ul>
+            <li>Единый номер экстренной помощи в ЕС: <strong>112</strong>.</li>
+            <li>Если эвакуировали машину: ищите знак с телефоном Polizia Locale рядом с парковкой.</li>
+            <li>Если потеряли билет на платной дороге, нажмите кнопку помощи на автомате, не пытайтесь выехать через Telepass.</li>
+            <li>Часы музеев могут меняться из-за праздников и мероприятий. Перед выездом откройте официальный сайт конкретного места.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Версия:</strong> июнь 2026. Цены и часы работы указаны по открытым официальным источникам и туристическим сайтам на момент подготовки. Перед оплатой и выездом проверяйте официальный сайт места.</p>
+      <p><a href="#top">Наверх</a> · Чтобы сделать PDF: откройте этот файл в браузере → Ctrl+P → «Сохранить как PDF».</p>
+    </footer>
+  </main>
+</body>
+</html>
